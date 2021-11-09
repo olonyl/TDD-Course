@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calculator.cs" />
+    <Compile Include="CalculatorTests.cs" />
     <Compile Include="FibonacciTests.cs" />
     <Compile Include="FizzBuzzTests.cs" />
     <Compile Include="ImmutableStackTests.cs" />

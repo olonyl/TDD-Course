@@ -10,19 +10,20 @@ namespace TDD_Course
     {
         static void Main(string[] args)
         {
-            string empty = NaiveCanonicalizer.GetCanonicalForm("");
+            string empty = NaiveCanonicalizer.GetCanonicalForm(" katie melua life wonderfuL ");
             Console.WriteLine(empty == "");
             empty = NaiveCanonicalizer.GetCanonicalForm(" ");
             Console.WriteLine(empty == "");
-            empty = NaiveCanonicalizer.GetCanonicalForm("    ");
+            empty = NaiveCanonicalizer.GetCanonicalForm("   ");
             Console.WriteLine(empty == "");
 
-            Console.WriteLine(NaiveCanonicalizer.GetCanonicalForm(" Katie Melua life wonderfuL  "));
-            Console.WriteLine(NaiveCanonicalizer.GetCanonicalForm("Katie     Melua   life    wonderfuL  "));
 
-            Console.WriteLine(NaiveCanonicalizer.GetCanonicalForm("Wonderful Life Katie Melua"));
-            Console.WriteLine(NaiveCanonicalizer.GetCanonicalForm("life Wonderful katie Melua"));
-            Console.WriteLine(NaiveCanonicalizer.GetCanonicalForm("Katie Melua life wonderfuL"));
+            Console.WriteLine(NaiveCanonicalizer.GetCanonicalForm(" katie melua life wonderfuL "));
+            Console.WriteLine(NaiveCanonicalizer.GetCanonicalForm("katie      Melua    life   Wonderful   "));
+
+            Console.WriteLine(NaiveCanonicalizer.GetCanonicalForm("Wonderful Life katie Melua"));
+            Console.WriteLine(NaiveCanonicalizer.GetCanonicalForm("Life Wonderful katie Melua"));
+            Console.WriteLine(NaiveCanonicalizer.GetCanonicalForm("katie Melua life Wonderful"));
 
             Console.Read();
         }
